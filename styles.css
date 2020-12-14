@@ -10,7 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     display: grid;
-    grid-template: 3fr .5fr / 1fr 2.5fr;
+    grid-template: 3fr .7fr / 1fr 2.5fr;
     grid-template-areas: 
         "section1 section2"
         "section3 section4";
@@ -21,6 +21,9 @@ img {
 }
 li {
     list-style: none;
+}
+a {
+    text-decoration: none;
 }
 /* Section 1 */
 .section1 {
@@ -34,7 +37,7 @@ li {
 }
 h1 {
     font-size: 4.5rem;
-    
+    font-family: 'Poppins', sans-serif;
 }
 .section1_logo {
     height: 10%;
@@ -48,15 +51,23 @@ h1 {
     justify-content: center;
     font-size: 1.1rem;
     padding-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 /* Section 2 */
 .section2 {
     grid-area: section2;
+    background-image: url(Images/pie.jpg);
+    background-size:cover;
 }
 .section2_navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+.section2 a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 /* Section 3 */
 .section3 {
@@ -64,6 +75,7 @@ h1 {
     grid-area: section3;
     align-items: center;
     justify-content: center;
+    background-color: #cd8825;
 }
 .section3_navbar {
     width: 100%;
@@ -72,11 +84,20 @@ h1 {
     font-size: 1rem;
     justify-content: space-around;
 }
+.section3 a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 /* Section 4 */
 .section4 {
     grid-area: section4;
     display: flex;
     flex-direction: row;
+    background-image: url(Images/Rectangle\ 1.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .section4_stars-text {
     width: 30%;
@@ -86,20 +107,31 @@ h1 {
 }
 .section4 p{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 .section4 ul img {
-    width: 2rem;
-    height: 2rem;
+    width: 3.3rem;
+    height: 3.3rem;
 }
 .stars {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0 0 1.5rem ;
 }
 .section4_images {
     width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
+.section4_images img {
+    width: 10rem;
+}
+/* .section4_back {
+    justify-self: flex-end;
+    width: 50%;
+    background-color: yellow;
+} */
